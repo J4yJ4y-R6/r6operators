@@ -37,7 +37,7 @@
     "test": "jest",
     "lint": "eslint **/*.{js,ts} --ignore-path .gitignore",
     "format": "prettier **/* --ignore-path .gitignore --check --write",
-    "prepare": "npm run build"
+    "prepack": "yarn build"
   },
   "dependencies": {
     "clsx": "^2.0.0"
@@ -79,5 +79,6 @@
   "lint-staged": {
     "*.js": "eslint --cache --fix",
     "*.--write": "prettier --write"
-  }
+  },
+  "packageManager": "yarn@4.4.1"
 }
