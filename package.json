@@ -37,7 +37,7 @@
     "test": "jest",
     "lint": "eslint **/*.{js,ts} --ignore-path .gitignore",
     "format": "prettier **/* --ignore-path .gitignore --check --write",
-    "prepare": "husky"
+    "prepare": "npm run build"
   },
   "dependencies": {
     "clsx": "^2.0.0"
