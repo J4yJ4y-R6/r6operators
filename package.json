@@ -37,7 +37,8 @@
     "test": "jest",
     "lint": "eslint **/*.{js,ts} --ignore-path .gitignore",
     "format": "prettier **/* --ignore-path .gitignore --check --write",
-    "prepack": "yarn build"
+    "prepack": "yarn build",
+    "prepare": "yarn prepack"
   },
   "dependencies": {
     "clsx": "^2.0.0"
